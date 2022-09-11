@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
 
 *,
 *::before,
@@ -7,38 +8,39 @@
 }
 
 :root{
-    --main-color: #0b3546;
-    --main-color-dark: #187194;
+    --main-color: #c6e5d9;
+    --main-color-destaque: #f4ead5;
     --main-color-light: #187194;
-    --text-color: #fff;
+    --text-color: #000;
 }
 
 body{
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    background-color: #187194;
+    background-color: #fff;
     min-height: 100vh;
     display: flex;
     position: relative;
 }
-
+/* reset da lista */
 a{
     text-decoration: none;
 }
-
 ul{
     list-style: none;
 }
-
+/*  */
 nav {
     position: sticky;
     top: 0;
     left: 0;
     height: 100vh;
-    background-color: var(--main-color);
+    background-color:;
     width: 16rem;
     padding: 1.8rem 0.85rem;
-    color: #fff;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     transition: width 0.5s ease-in-out;
@@ -93,7 +95,7 @@ nav {
     font-weight: 600;
     font-size: 1.15rem;
   }
-  
+  /* btn que oculta o menu */
   .shrink-btn {
     position: absolute;
     top: 50%;
@@ -116,7 +118,7 @@ nav {
   }
   
   .shrink-btn:hover {
-    background-color: var(--main-color-dark);
+    background-color: var(--main-color-destaque);
   }
   
   nav:hover .shrink-btn,
@@ -128,7 +130,7 @@ nav {
   
   .search {
     min-height: 2.7rem;
-    background-color: var(--main-color-light);
+    background-color: var(--main-color-destaque);
     margin: 2rem 0.5rem 1.7rem;
     display: grid;
     grid-template-columns: 2.7rem 1fr;
@@ -171,28 +173,23 @@ nav {
   }
   
   .icon {
-    font-size: 1.3rem;
-    text-align: center;
-    min-width: 3.7rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
   }
   
-  .icon i {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+  .icon img {
     transition: 0.3s;
+    width: 40px;
+    margin: auto 5px;
   }
   
   .icon i:last-child {
     opacity: 0;
-    color: #fff;
+    color: #c1c1c1;
   }
   
   .sidebar-links a.active,
   .sidebar-links a:hover {
-    color: #fff;
+    color: #c1c1c1;
   }
   
   .sidebar-links a .link {
@@ -210,7 +207,7 @@ nav {
   .active-tab {
     width: 100%;
     height: 53px;
-    background-color: var(--main-color-dark);
+    background-color: var(--main-color-destaque);
     border-radius: 10px;
     position: absolute;
     top: 2.5px;
@@ -377,12 +374,3 @@ nav {
   body.shrink .tooltip {
     display: grid;
   }
-
-
-
-
-
-
-
-
-

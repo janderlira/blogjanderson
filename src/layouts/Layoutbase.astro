@@ -8,9 +8,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Menu Dashboard</title>
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <title>i-Ótica</title>
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="../">
 </head>
 
 <body>
@@ -19,13 +20,13 @@
       <span class="shrink-btn">
         <i class='bx bx-chevron-left'></i>
       </span>
-      <img src="logo.png" class="logo" alt="">
-      <h3 class="hide">DEV SCHOOL</h3>
+      <img src="img/logo-glasses.png" class="logo" alt="">
+      <h3 class="hide">i-Ótica</h3>
     </div>
 
     <div class="search">
       <i class='bx bx-search'></i>
-      <input type="text" class="hide" placeholder="Quick Search ...">
+      <input type="text" class="hide" placeholder="Busca rápida ...">
     </div>
 
     <div class="sidebar-links">
@@ -34,8 +35,7 @@
         <li class="tooltip-element" data-tooltip="0">
           <a href="#" class="active" data-active="0">
             <div class="icon">
-              <i class='bx bx-tachometer'></i>
-              <i class='bx bxs-tachometer'></i>
+              <img src="img/icons-dashboard.png" alt="">
             </div>
             <span class="link hide">Dashboard</span>
           </a>
@@ -43,43 +43,51 @@
         <li class="tooltip-element" data-tooltip="1">
           <a href="#" data-active="1">
             <div class="icon">
-              <i class='bx bx-folder'></i>
-              <i class='bx bxs-folder'></i>
+              <img src="img/icons-order.png" alt="">
             </div>
-            <span class="link hide">Projects</span>
+            <span class="link hide">Orden de Serviço</span>
           </a>
         </li>
         <li class="tooltip-element" data-tooltip="2">
           <a href="#" data-active="2">
             <div class="icon">
-              <i class='bx bx-message-square-detail'></i>
-              <i class='bx bxs-message-square-detail'></i>
+              <img src="img/icons-client2.png" alt="">
             </div>
-            <span class="link hide">Messages</span>
+            <span class="link hide">Cliente</span>
           </a>
         </li>
         <li class="tooltip-element" data-tooltip="3">
           <a href="#" data-active="3">
             <div class="icon">
-              <i class='bx bx-bar-chart-square'></i>
-              <i class='bx bxs-bar-chart-square'></i>
+              <img src="img/icons-product2.png" alt="">
             </div>
-            <span class="link hide">Analytics</span>
+            <span class="link hide">Produto</span>
+          </a>
+        </li>
+        <hr style="border:1px solid #e9e9e9;">
+        <li class="tooltip-element" data-tooltip="4">
+          <a href="#" data-active="4">
+            <div class="icon">
+              <img src="img/icons-whatsapp.png" alt="">
+            </div>
+            <span class="link hide">Whatsapp</span>
           </a>
         </li>
         <div class="tooltip">
           <span class="show">Dashboard</span>
-          <span>Projects</span>
-          <span>Messages</span>
-          <span>Analytics</span>
+          <span>Orden de Serviço</span>
+          <span>Cliente</span>
+          <span>Produto</span>
+          <span>Whatsapp</span>
         </div>
       </ul>
 
-      <h4 class="hide">Shortcuts</h4>
+      <!-- <h4 class="hide">Atalhos</h4> -->
+      
 
-      <ul>
+      <!-- <ul>
         <li class="tooltip-element" data-tooltip="0">
-          <a href="#" data-active="4">
+          <a href="#" data-active="5">
             <div class="icon">
               <i class='bx bx-notepad'></i>
               <i class='bx bxs-notepad'></i>
@@ -88,7 +96,7 @@
           </a>
         </li>
         <li class="tooltip-element" data-tooltip="1">
-          <a href="#" data-active="5">
+          <a href="#" data-active="6">
             <div class="icon">
               <i class='bx bx-help-circle'></i>
               <i class='bx bxs-help-circle'></i>
@@ -97,7 +105,7 @@
           </a>
         </li>
         <li class="tooltip-element" data-tooltip="2">
-          <a href="#" data-active="6">
+          <a href="#" data-active="7">
             <div class="icon">
               <i class='bx bx-cog'></i>
               <i class='bx bxs-cog'></i>
@@ -110,7 +118,7 @@
           <span>Help</span>
           <span>Settings</span>
         </div>
-      </ul>
+      </ul> -->
     </div>
 
     <div class="sidebar-footer">
@@ -120,7 +128,7 @@
       
       <div class="admin-user tooltip-element" data-tooltip="1">
         <div class="admin-profile hide">
-          <img src="logo.png" alt="">
+          <img src="img/user.png" alt="">
           <div class="admin-info">
             <h3>ADMIN</h3>
           </div>
@@ -131,21 +139,16 @@
       </div>
 
       <div class="tooltip">
-        <span class="show">DEV SCHOOL</span>
+        <span class="show">Admin</span>
         <span>Logout</span>
       </div>
     </div>
   </nav>
 
   <main>
-    <h1>Dashboard da DEV SCHOOL</h1>
-
-    <hr>
-      <slot />
-    <hr>
-
+    <h1>Dashboard</h1>
     <p class="copyright">
-      &copy; 2022 - <span>DEV SCHOOL</span> Todos os direitos reservados
+      &copy; 2022 - CriativoTI</span> | Parceria Ótica Lira
     </p>
   </main>
 
